@@ -187,12 +187,45 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { transition: none !important; }
   }
+ 
+/* Círculo decorativo en la esquina superior izquierda */
+.card-header {
+  isolation: isolate;
+}
+
+.brand-circle {
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  top: -145px;
+  left: -145px;
+  border-radius: 50%;
+  background: #231f1b;
+  pointer-events: none;
+}
+
+.brand-circle::before {
+  content: "";
+  position: absolute;
+  inset: 33px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #70ad5b 5%,
+    #559a65 38%,
+    #347e86 64%,
+    #233e70 100%
+  );
+}
 </style>
 </head>
 <body>
 
 <div class="card">
   <div class="card-header">
+    <div class="brand-circle" aria-hidden="true"></div>
+
     <div class="initials">PB</div>
     <h1>Example Name</h1>
     <p class="role">Marketing Department<br>Litens Aftermarket</p>
