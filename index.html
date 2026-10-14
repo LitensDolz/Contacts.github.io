@@ -193,6 +193,7 @@
   isolation: isolate;
 }
 
+
 .brand-circle {
   position: absolute;
   z-index: -1;
@@ -201,21 +202,21 @@
   top: -145px;
   left: -145px;
   border-radius: 50%;
-  background: #231f1b;
+  background: transparent;
   pointer-events: none;
 }
 
 .brand-circle::before {
   content: "";
   position: absolute;
-  inset: 33px;
+  inset: 0;
   border-radius: 50%;
   background: linear-gradient(
     135deg,
-    #70ad5b 5%,
-    #559a65 38%,
-    #347e86 64%,
-    #233e70 100%
+    #77c45b 0%,
+    #43a849 35%,
+    #008c95 65%,
+    #153e83 100%
   );
 }
 </style>
