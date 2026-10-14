@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pablo Bermejo — Industrias Dolz</title>
-<meta name="description" content="Tarjeta de contacto de Pablo Bermejo Moreno, Marketing Department en Industrias Dolz S.A.">
+<title>Example Name — Litens Aftermarket</title>
+<meta name="description" content="Tarjeta de contacto de Example Name, Marketing Department en Litens Aftermaket ">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -194,8 +194,8 @@
 <div class="card">
   <div class="card-header">
     <div class="initials">PB</div>
-    <h1>Pablo Bermejo Moreno</h1>
-    <p class="role">Marketing Department<br>Industrias Dolz S.A.</p>
+    <h1>Example Name</h1>
+    <p class="role">Marketing Department<br>Litens Aftermarket</p>
   </div>
 
   <div class="card-body">
@@ -208,31 +208,31 @@
           </div>
           <div class="contact-info">
             <span class="contact-label">Móvil</span>
-            <span class="contact-value">+34 605 445 666</span>
+            <span class="contact-value">+34 123 456 789</span>
           </div>
         </a>
       </li>
 
       <li>
-        <a class="contact-item" href="mailto:pablo.bermejo@idolz.com">
+        <a class="contact-item" href="mailto:Example.ex@litens.com">
           <div class="icon">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div class="contact-info">
             <span class="contact-label">Email</span>
-            <span class="contact-value">pablo.bermejo@idolz.com</span>
+            <span class="contact-value">Example.ex@litens.com</span>
           </div>
         </a>
       </li>
 
       <li>
-        <a class="contact-item" href="https://www.idolz.com" target="_blank" rel="noopener">
+        <a class="contact-item" href="https://www.litensaftermarket.com" target="_blank" rel="noopener">
           <div class="icon">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <div class="contact-info">
             <span class="contact-label">Web</span>
-            <span class="contact-value">www.idolz.com</span>
+            <span class="contact-value">www.litensaftermarket.com</span>
           </div>
         </a>
       </li>
@@ -242,7 +242,7 @@
     <a class="btn-save" href="#" onclick="saveContact(event)">Guardar contacto</a>
   </div>
 
-  <div class="footer">Industrias Dolz S.A. &mdash; Marketing Department</div>
+  <div class="footer">Litens Aftermarket &mdash; Marketing Department</div>
 </div>
 
 <script>
@@ -251,13 +251,13 @@ function saveContact(e) {
   var vcard = [
     'BEGIN:VCARD',
     'VERSION:3.0',
-    'FN:Pablo Bermejo Moreno',
-    'N:Bermejo Moreno;Pablo;;;',
-    'ORG:Industrias Dolz S.A.',
+    'FN:Example Name',
+    'N:Example;Example;;;',
+    'ORG:Litens Aftermarket',
     'TITLE:Marketing Department',
-    'TEL;TYPE=CELL:+34605445666',
-    'EMAIL:pablo.bermejo@idolz.com',
-    'URL:https://www.idolz.com',
+    'TEL;TYPE=CELL:+34123456789',
+    'EMAIL:example.ex@litens.com',
+    'URL:https://www.litensaftermarket.com',
     'END:VCARD'
   ].join('\r\n');
 
@@ -265,7 +265,7 @@ function saveContact(e) {
   var url = URL.createObjectURL(blob);
   var a = document.createElement('a');
   a.href = url;
-  a.download = 'pablo_bermejo.vcf';
+  a.download = 'contactcard.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
